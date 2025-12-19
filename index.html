@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Romas Estética - Las Palmas | Manicura, Pedicura y Bienestar</title>
+    <meta name="description"
+        content="Romas Estética en Las Palmas. Especialistas en manicura premium, pedicura spa y tratamientos de bienestar. Tu rincón de confianza en el CC Áncora.">
+    <meta name="keywords"
+        content="estética, depilación láser Arguineguin, manicurista las palmas, manicura, pedicura, uñas, bienestar, gran canaria, romas estética">
+    <link rel="icon" type="image/jpeg" href="logo.jpeg">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'romas-pink': '#BC8F8F',
+                        'romas-dark': '#1c1917',
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .glass-nav {
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(12px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+        }
+
+        .animate-float {
+            animation: float 4s infinite ease-in-out;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(-5px);
+            }
+
+            50% {
+                transform: translateY(0px);
+            }
+        }
+
+        /* Ajuste para mejorar la legibilidad sobre la imagen */
+        .hero-text-shadow {
+            text-shadow: 0 2px 10px rgba(255, 255, 255, 0.5);
+        }
+    </style>
+</head>
+
+<body class="bg-stone-50 text-stone-800 font-sans selection:bg-romas-pink selection:text-white">
+
+    <!-- Navegación -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 py-4">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <img src="logo.jpeg" alt="Romas Logo"
+                        class="h-16 md:h-20 w-auto object-contain transition-transform duration-300 hover:scale-105">
+                </div>
+
+                <!-- Menú Desktop -->
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#inicio"
+                        class="text-sm font-semibold hover:text-romas-pink transition-colors uppercase tracking-widest">Inicio</a>
+                    <a href="#servicios"
+                        class="text-sm font-semibold hover:text-romas-pink transition-colors uppercase tracking-widest">Servicios</a>
+                    <a href="#testimonios"
+                        class="text-sm font-semibold hover:text-romas-pink transition-colors uppercase tracking-widest">Opiniones</a>
+                    <a href="https://wa.me/34653207251" target="_blank"
+                        class="bg-romas-pink text-white px-6 py-2.5 rounded-full text-sm font-bold hover:bg-[#a07a7a] transition-all transform hover:scale-105 shadow-lg">
+                        Reserva Cita Mi Niña
+                    </a>
+                </div>
+
+                <!-- Botón Mobile -->
+                <div class="md:hidden">
+                    <button id="menu-btn" class="p-2 text-stone-900">
+                        <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Menú Mobile Panel -->
+        <div id="mobile-menu"
+            class="hidden absolute top-full left-0 w-full bg-white shadow-2xl border-t border-stone-100 flex flex-col items-center py-8 space-y-6 md:hidden">
+            <a href="#inicio" class="mobile-link text-lg font-bold">Inicio</a>
+            <a href="#servicios" class="mobile-link text-lg font-bold">Servicios</a>
+            <a href="#testimonios" class="mobile-link text-lg font-bold">Opiniones</a>
+            <a href="https://wa.me/34653207251"
+                class="bg-romas-pink text-white px-8 py-4 rounded-full font-bold shadow-lg">Pide cita, mi niña</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="relative min-h-screen flex items-center justify-center pt-20">
+        <div class="absolute inset-0 z-0 overflow-hidden">
+            <!-- Nueva imagen más limpia y clara tipo spa de uñas -->
+            <img src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?auto=format&fit=crop&q=80&w=2000"
+                alt="Spa de uñas minimalista" class="w-full h-full object-cover">
+            <!-- Capa de brillo para que el fondo sea más sutil y el título resalte -->
+            <div class="absolute inset-0 bg-white/60 backdrop-blur-[2px]"></div>
+            <div class="absolute inset-0 bg-gradient-to-b from-white/40 via-transparent to-stone-50"></div>
+        </div>
+
+        <div class="relative z-10 max-w-5xl mx-auto px-4 text-center">
+            <div class="mb-10 flex justify-center animate-float">
+                <img src="logo.jpeg" alt="Romas Estética Central" class="h-32 md:h-44 drop-shadow-xl rounded-2xl">
+            </div>
+            <h1 class="text-5xl md:text-8xl font-bold text-stone-900 leading-tight mb-8 font-serif hero-text-shadow">
+                Estética en <br><span class="text-romas-pink italic">Las Palmas</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-stone-800 mb-10 max-w-2xl mx-auto font-semibold leading-relaxed">
+                Relájate, chacha, que estás en buenas manos. En el CC Áncora te esperamos con café, buena charla y
+                resultados divinos.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-6 justify-center">
+                <a href="https://wa.me/34653207251" target="_blank"
+                    class="px-10 py-5 bg-romas-pink text-white rounded-full font-bold text-xl shadow-2xl hover:bg-[#a07a7a] transition-all transform hover:-translate-y-1">
+                    Pide tu cita ya
+                </a>
+                <a href="#servicios"
+                    class="px-10 py-5 bg-white/80 backdrop-blur-sm text-stone-900 rounded-full font-bold text-xl shadow-md border border-stone-200 hover:bg-stone-50 transition-all">
+                    Ver tratamientos
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="py-24 px-4 bg-white relative">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-20">
+                <h2 class="text-4xl md:text-6xl font-bold font-serif mb-6">Nuestros Caprichos</h2>
+                <div class="w-24 h-1 bg-romas-pink mx-auto"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <!-- Servicio 1: Manicura -->
+                <div
+                    class="group bg-stone-50 rounded-[2.5rem] overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500">
+                    <div class="h-72 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?auto=format&fit=crop&q=80&w=800"
+                            alt="Manicura premium"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000">
+                    </div>
+                    <div class="p-10">
+                        <span class="text-romas-pink font-black text-xs uppercase tracking-widest">Manicura
+                            Premium</span>
+                        <h3 class="text-3xl font-bold mt-2 mb-4 font-serif text-stone-900">Uñas que son puro fuego</h3>
+                        <p class="text-stone-600 text-lg mb-6">Esa sensación de estrenar manos que te hacen sentir
+                            poderosa y divina en cada movimiento. ¡Agüita con el brillo, chacha, que no podrás dejar de
+                            mirártelas!</p>
+                        <a href="https://wa.me/34653207251"
+                            class="inline-block border-b-2 border-romas-pink font-bold pb-1 hover:text-romas-pink transition-colors uppercase text-sm tracking-widest">Consultar
+                            disponibilidad</a>
+                    </div>
+                </div>
+
+                <!-- Servicio 2: Pedicura -->
+                <div
+                    class="group bg-[#f7f5f2] rounded-[2.5rem] overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500">
+                    <div class="h-72 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1519415387722-a1c3bbef716c?auto=format&fit=crop&q=80&w=800"
+                            alt="Pedicura profesional"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000">
+                    </div>
+                    <div class="p-10">
+                        <span class="text-romas-pink font-black text-xs uppercase tracking-widest">Pedicura Spa</span>
+                        <h3 class="text-3xl font-bold mt-2 mb-4 font-serif text-stone-900">Camina por las nubes</h3>
+                        <p class="text-stone-600 text-lg mb-6">Como si caminaras sobre las nubes de la cumbre, sintiendo
+                            una ligereza que te deja los pies como nuevos al golpito. Te verás tan impecable que querrás
+                            lucir sandalias hasta en invierno.</p>
+                        <a href="https://wa.me/34653207251"
+                            class="inline-block border-b-2 border-romas-pink font-bold pb-1 hover:text-romas-pink transition-colors uppercase text-sm tracking-widest">Me
+                            lo pido</a>
+                    </div>
+                </div>
+
+                <!-- Servicio 3: Depilación Láser -->
+                <div
+                    class="group bg-stone-50 rounded-[2.5rem] overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500">
+                    <div class="h-72 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1559599101-f09722fb4948?auto=format&fit=crop&q=80&w=800"
+                            alt="Depilación láser profesional"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000">
+                    </div>
+                    <div class="p-10">
+                        <span class="text-romas-pink font-black text-xs uppercase tracking-widest">Depilación
+                            Láser</span>
+                        <h3 class="text-3xl font-bold mt-2 mb-4 font-serif text-stone-900">Libertad y suavidad total
+                        </h3>
+                        <p class="text-stone-600 text-lg mb-6">La libertad absoluta de una piel de seda que te hace
+                            sentir lista para lo que venga, sin un solo estorbo. Una suavidad de escándalo que te hará
+                            olvidar lo que era estar pendiente de vellitos.</p>
+                        <a href="https://wa.me/34653207251"
+                            class="inline-block border-b-2 border-romas-pink font-bold pb-1 hover:text-romas-pink transition-colors uppercase text-sm tracking-widest">Adiós
+                            pelos</a>
+                    </div>
+                </div>
+
+                <!-- Servicio 4: Presoterapia -->
+                <div
+                    class="group bg-[#f7f5f2] rounded-[2.5rem] overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-500">
+                    <div class="h-72 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1519823551278-64ac92734fb1?auto=format&fit=crop&q=80&w=800"
+                            alt="Presoterapia bienestar"
+                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000">
+                    </div>
+                    <div class="p-10">
+                        <span class="text-romas-pink font-black text-xs uppercase tracking-widest">Presoterapia</span>
+                        <h3 class="text-3xl font-bold mt-2 mb-4 font-serif text-stone-900">Renovación desde dentro</h3>
+                        <p class="text-stone-600 text-lg mb-6">Prepárate para quedarte roque de puro relax mientras
+                            sientes cómo tus piernas se vuelven ligeras como el aire. Es el secreto mejor guardado para
+                            sentirte renovada y con una energía que te hará brillar.</p>
+                        <a href="https://wa.me/34653207251"
+                            class="inline-block border-b-2 border-romas-pink font-bold pb-1 hover:text-romas-pink transition-colors uppercase text-sm tracking-widest">Quiero
+                            relax</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios (Sección Nueva Re-añadida para completar) -->
+    <section id="testimonios" class="py-24 px-4 bg-stone-50">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-bold font-serif mb-6">Lo que dicen las niñas</h2>
+                <div class="flex justify-center gap-1 text-romas-pink mb-4">
+                    <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center italic">
+                <div class="p-6">
+                    <p class="text-lg text-stone-700">"Chacha, increíble. El trato es súper cercano y mis uñas aguantan
+                        lo que sea."</p>
+                    <p class="mt-4 font-bold not-italic">— Maria S.</p>
+                </div>
+                <div class="p-6 border-x border-stone-200">
+                    <p class="text-lg text-stone-700">"El mejor sitio de Las Palmas. Sales relajada y divina. ¡Repito
+                        seguro!"</p>
+                    <p class="mt-4 font-bold not-italic">— Laura R.</p>
+                </div>
+                <div class="p-6">
+                    <p class="text-lg text-stone-700">"La pedicura spa es de otro planeta. Mis pies parecen nuevos."</p>
+                    <p class="mt-4 font-bold not-italic">— Carmen G.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="bg-romas-dark text-stone-400 py-20 px-4">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+            <div>
+                <img src="logo.jpeg" alt="Logo Romas Estética" class="h-16 opacity-90 mb-6 rounded-lg shadow-sm">
+                <p class="text-sm leading-loose">Tu rincón de confianza en Las Palmas para salir divina sin
+                    complicaciones.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-black text-xs uppercase tracking-[0.2em] mb-8 text-romas-pink">Tratamientos
+                </h4>
+                <ul class="space-y-4 text-sm font-medium">
+                    <li>Manicura Rusa</li>
+                    <li>Pedicura Completa</li>
+                    <li>Depilación Láser</li>
+                    <li>Presoterapia</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-black text-xs uppercase tracking-[0.2em] mb-8 text-romas-pink">Dónde estamos
+                </h4>
+                <p class="text-sm font-medium leading-relaxed">CC ÁNCORA, Local N175<br>Las Palmas de G.C.<br>Gran
+                    Canaria, España</p>
+            </div>
+            <div>
+                <h4 class="text-white font-black text-xs uppercase tracking-[0.2em] mb-8 text-romas-pink">Síguenos</h4>
+                <div class="flex space-x-4">
+                    <a href="https://instagram.com" target="_blank"
+                        class="bg-stone-800 p-3 rounded-full hover:bg-romas-pink text-white transition-all font-bold">IG</a>
+                </div>
+            </div>
+        </div>
+        <div
+            class="max-w-7xl mx-auto mt-20 pt-8 border-t border-stone-800 text-center text-[10px] uppercase tracking-widest font-black">
+            &copy; 2025 Romas Estética. Hecho con ❤️ en Canarias 🇮🇨
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating -->
+    <a href="https://wa.me/34653207251" target="_blank"
+        class="fixed bottom-8 right-8 z-50 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform animate-float">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" viewBox="0 0 16 16">
+            <path
+                d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
+        </svg>
+    </a>
+
+    <script>
+        // Navegación Scroll Effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.classList.add('glass-nav');
+            } else {
+                navbar.classList.remove('glass-nav');
+            }
+        });
+
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuLinks = document.querySelectorAll('.mobile-link');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        menuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+
+</html>
